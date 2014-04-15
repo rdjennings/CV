@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			td div {
+				color: #fff;
+				height: 200px;
+			}
+			.selected:after {
+			    border: medium solid transparent;
+			    content: " ";
+			    height: 0;
+			    pointer-events: none;
+			    position: absolute;
+			    left: 20px;
+			    width: 0;
+			    
+			    border-bottom-color: #7F7F7F;
+			    border-width: 11px;
+			    margin-top: -11px;
+			    bottom: 0;
+			}
+
+		</style>
+	</head>
+	<body>
+		<table style="width: 100%;">
+			<tr style="width: 100%;">
+				<td style="background: red none;"><div>a</div></td>
+				<td class="selected" style="background: green none;"><div>b</div></td>
+				<td style="background: blue none;"><div>c</div></td>
+			</tr>
+		</table>
+		
+		
+		<div class="selected" style="background: orange; height: 300px; width: 300px;">test</div>
+	</body>
+</html>
