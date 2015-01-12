@@ -55,7 +55,13 @@ jQuery(document).ready(function() {
 		});
 		this.target.on('click', '.topic', function() {
 			if(jQuery(this).css('cursor').toLowerCase() === 'pointer') {
-				alert('here we should expand/contract the content');
+				var  $parent = jQuery(this).closest('.info_card');
+				if ($parent.hasClass('expanded')) {
+					$parent.removeClass('expanded');
+				} else {
+					var list = jQuery('.info_card').removeClass('expanded');
+					$parent.addClass('expanded');
+				}
 			}
 		});
 	};

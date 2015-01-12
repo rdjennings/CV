@@ -488,7 +488,7 @@ body {
 		display: none;
 	}
 
-	.info_card.selected .content .description {
+	.info_card.expanded .content .description {
 		display: block;
 	}
 	
